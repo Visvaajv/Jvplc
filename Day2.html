@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Perfume Website</title>
+        <style>
+            body{
+                margin: 0;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            h3{
+                background-color: rgb(5, 5, 72);
+                color: #ffffff;
+                padding: 15px;
+                margin:auto;
+                display:block;
+            }
+            img{
+                height: 500px;
+                width: auto;
+            }
+        nav {
+            background-color: #ffffff;
+            }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            overflow: hidden;
+            
+        }
+        nav ul li {
+            float:left;
+        }
+        nav ul li a {
+            display: block;
+            color:rgb(0, 0, 0) ;
+            text-align: center;
+            padding: 12px 10px;
+            text-decoration: none;
+            margin-left: 150px;
+        }
+        nav ul li a:hover {
+            background-color: rgb(148, 148, 216);
+            color: black;
+        }
+    
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    border: 2px solid rgb(152, 152, 152);
+    border-radius: 5px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.discount {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.offer {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(88, 97, 101);
+}
+
+        </style>
+    </head>
+    <body>
+        <center><h3>Get extra 20% discount, use code VIS07</h3>
+            <header>
+                <nav>
+                <ul>
+                    <li><a href="Aboutus.html"><b>ABOUT US</b></a></li>
+                    <li><a href="shop.html"><b>SHOP</b></a></li>
+                    <li><a href="store.html"><b>OUR STORES</b></a></li>
+                    <li><a href="perfume.html"><b>PERFUMES</b></a></li>
+                    <li><a href="gift.html"><b>GIFTING</b></a></li>
+                </ul>
+            </nav>
+            </header>
+            <img src = "https://in.ajmal.com/cdn/shop/files/Flat-50_-off_5ec68bdc-2c65-4eb4-b123-8294e412c31e.jpg?v=1731666658"></img>
+            <center><h2><strong>It's an art. Craft. And science. At JV Perfumes, <br>we're in the business of creating memories that are everlasting through our fragrances.</strong></h2>
+                <div class="btn">
+            <button style="font-size: 15px;border-color: goldenrod; padding: 15px; margin-bottom: 18px;border-radius: 20px;"onclick="navigateToPerfume()">Discover all</button></center>
+    <script>
+        function navigateToPerfume() 
+        {
+            window.location.href = "perfume.html"; 
+        }
+    </script>
+            <marquee style="background-color: rgb(5, 5, 72); margin-bottom:30px; color:white; padding: 5px;" ><h3>Over 100 Years of Legacy     Perfumery for Everybody</h3></marquee>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfZTWSQ806b6Lwwkwpb1Q6Pl1YbUx9T30IGQ&s">
+                <h3>Sauvage</h3>
+                <p>₹1,169.00 <span class="discount">₹1,299.00</span> <span class="offer">10% Off</span></p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPCV6iA1QLPfly2eTAqushMmdZ393ZgVUTog&s">
+                <h3>Shooting Star</h3>
+                <p>₹599.00 <span class="discount">₹899.00</span> <span class="offer">33% Off</span></p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQBcoYzOEJU73VB7dZekSgRlpq0B_CijFyyA&s" alt="Aristocrat Coral">
+                <h3>Axe Signature</h3>
+                <p>₹2,000.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="data:image/jpeg;base64,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" alt="Aristocrat Coastal">
+                <h3>Yardley Classic</h3>
+                <p>₹1,000.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </body>
+</html>
